@@ -1,0 +1,90 @@
+{
+    "$schema": "/etc/xdg/swaync/configschema.json",
+    "positionX": "right",
+    "positionY": "top",
+    "cssPriority": "user",
+    "control-center-width": 380,
+    "fit-to-screen": false,
+
+    "notification-window-width": 350,
+    "notification-icon-size": 48,
+    "notification-body-image-height": 160,
+    "notification-body-image-width": 160,
+    "notification-inline-replies": true,
+    "notification-2fa-action": true,
+
+    "timeout": 4,
+    "timeout-low": 2,
+    "timeout-critical": 6,
+
+    "keyboard-shortcuts": true,
+    "image-visibility": "when-available",
+    "transition-time": 250,
+    "hide-on-clear": true,
+    "hide-on-action": true,
+    "script-fail-notify": true,
+
+    "widgets": [
+        "mpris",
+        "dnd",
+        "title",
+        "notifications"
+    ],
+
+    "widget-config": {
+        "title": {
+            "text": "Notifications",
+            "clear-button": true,
+            "button-text": "Clear All"
+        },
+        "dnd": {
+            "text": "Do Not Disturb"
+        },
+        "mpris": {
+            "image-size": 64,
+            "image-radius": 12,
+            "autohide": true,
+            "blacklist": ["org.mpris.MediaPlayer2.playerctld"]
+        },
+        "buttons-grid": {
+            "actions": [
+                {
+                    "label": "󰌪",
+                    "type": "toggle",
+                    "command": "bash -c '$HOME/.local/bin/powerprofile --toggle-quiet'",
+                    "update-command": "bash -c '$HOME/.local/bin/powerprofile --is-quiet'"
+                },
+                {
+                    "label": "",
+                    "type": "toggle",
+                    "command": "bash -c '$HOME/.local/bin/caffeine'",
+                    "update-command": "bash -c '$HOME/.local/bin/caffeine --is-running'"
+                },
+                {
+                    "label": "",
+                    "type": "toggle",
+                    "command": "bash -c '$HOME/.local/bin/mictoggle --silent'",
+                    "update-command": "bash -c '$HOME/.local/bin/mictoggle --is-muted'"
+                },
+                {
+                    "label": "",
+                    "command": "hyprctl dispatch exec alacritty -- -e htop ; swaync-client -cp"
+                },
+                {
+                    "label": "󰃟",
+                    "type": "toggle",
+                    "command": "bash -c '$HOME/.local/bin/themesw'",
+                    "update-command": "bash -c '[ $($HOME/.local/bin/themesw --current) = light ] && echo true || echo false'"
+                },
+                {
+                    "label": "",
+                    "command": "hyprctl dispatch exec nwg-look ; swaync-client -cp"
+                },
+                {
+                    "label": "",
+                    "command": "swaync-client -cp ; bash -c $HOME/.config/rofi/bin/logout"
+                }
+            ]
+        }
+    }
+}

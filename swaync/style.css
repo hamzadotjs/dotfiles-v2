@@ -1,0 +1,176 @@
+@import "colors.css";
+
+/* Global Configuration */
+* {
+    font-family: "JetBrainsMono Nerd Font", "Anthropic Mono variable";
+    font-weight: 700;
+    all: unset;
+}
+
+/* Control Center Base Container */
+.control-center {
+    background: @background;
+    border: 2px solid @outline;
+    border-radius: 16px;
+    margin: 12px;
+    padding: 16px;
+}
+
+/* Title Widget Area */
+.widget-title {
+    margin: 4px 0 16px 0;
+}
+.widget-title > label {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: @primary;
+}
+.widget-title > button {
+    background: @surface_container_high;
+    color: @on_surface;
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: 1px solid @outline_variant;
+}
+.widget-title > button:hover {
+    background: @primary;
+    color: @on_primary;
+}
+
+/* Do Not Disturb Container */
+.widget-dnd {
+    margin: 0 0 14px 0;
+    padding: 14px;
+    border-radius: 12px;
+    background: @surface_container;
+    border: 1px solid @outline_variant;
+    color: @on_surface;
+}
+.widget-dnd > label {
+    font-size: 1rem;
+    color: @on_surface;
+}
+.widget-dnd switch {
+    background: @surface_container_highest;
+    border: 1px solid @outline;
+    border-radius: 20px;
+    padding: 4px;
+    min-width: 40px;
+}
+.widget-dnd switch slider {
+    background: @outline;
+    border-radius: 20px;
+    min-width: 16px;
+    min-height: 16px;
+}
+.widget-dnd switch:checked {
+    background: @primary;
+    border-color: @primary;
+}
+.widget-dnd switch:checked slider {
+    background: @on_primary;
+}
+
+/* MPRIS Media Player Styling */
+.widget-mpris {
+    margin: 0 0 14px 0;
+    padding: 14px;
+    background: @surface_container_high;
+    border-radius: 12px;
+    border: 1px solid @outline;
+}
+.widget-mpris-player {
+    padding: 2px;
+}
+.widget-mpris-title {
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: @primary;
+}
+.widget-mpris-subtitle {
+    color: @on_surface_variant;
+    font-size: 0.9rem;
+}
+.widget-mpris-buttons button {
+    padding: 10px;
+    color: @on_surface;
+}
+.widget-mpris-buttons button:hover {
+    color: @primary;
+}
+
+/* Action Buttons Grid */
+.widget-buttons-grid {
+    background: @surface_container;
+    border-radius: 12px;
+    border: 1px solid @outline;
+    padding: 10px;
+    margin-top: 14px;
+}
+.widget-buttons-grid grid {
+    margin: 2px;
+}
+.widget-buttons-grid button {
+    background: @surface_container_low;
+    border: 1px solid @outline_variant;
+    border-radius: 10px;
+    padding: 14px;
+    margin: 4px;
+}
+.widget-buttons-grid button:hover {
+    background: @surface_container_highest;
+    border-color: @primary;
+}
+.widget-buttons-grid button:checked {
+    background: @primary;
+    border-color: @primary;
+}
+.widget-buttons-grid button label {
+    font-size: 18px;
+    color: @primary;
+}
+.widget-buttons-grid button:checked label {
+    color: @on_primary;
+}
+
+/* Notification Items inside the center */
+.notification-row {
+    outline: none;
+    margin: 6px 0;
+}
+.notification {
+    background: @surface_container_high;
+    border: 1px solid @outline_variant;
+    border-radius: 12px;
+    padding: 14px;
+    margin: 4px 0;
+}
+.notification-content {
+    color: @on_surface;
+}
+.notification-default-action {
+    padding: 2px;
+}
+.notification .summary {
+    font-size: 1rem;
+    font-weight: 800;
+    color: @primary;
+}
+.notification .body {
+    font-size: 0.9rem;
+    color: @on_surface_variant;
+}
+.notification-background .close-button {
+    background: transparent;
+    color: @on_surface_variant;
+    padding: 4px;
+}
+.notification-background .close-button:hover {
+    color: @error;
+}
+.control-center-list-placeholder {
+    color: @on_surface_variant;
+    font-size: 1.1rem;
+    opacity: 0.7;
+    padding: 40px 0;
+}
