@@ -11,7 +11,7 @@
 ## 🎯 Overview
 
 This config drops the traditional waybar/panel entirely. All info you need comes from:
-- **Quickshell config, stolen from Monoland**
+- **Quickshell config, Made by me**
 - **Dyncamic theming** using matugen
 - **power menu and swaync, rofi replacement in pure QML**
 ## 📦 Requirements
@@ -34,13 +34,15 @@ jetbrains-mono-nerd  # Font you probably use
 ```bash
 sudo pacman -S awww quickshell matugen kitty ttf-jetbrains-mono-nerd hyprland
 ```
+### or if you are on NixOS:
+add those packages to your global packages code block.
 
 ```bash
 # Clone to your dotfiles
-git clone https://github.com/dotfiles-v2 ~/.config/hypr
+git clone https://github.com/dotfiles-v2 ~/.config/
 
 # Or copy manually
-cp -r dotfiles-v2 ~/.config/hypr
+cp -r dotfiles-v2/* ~/.config/*
 ```
 
 ## ⚙️ Config Structure
@@ -66,4 +68,8 @@ cp -r dotfiles-v2 ~/.config/hypr
 ├── config.json
 ├── matugen_colors.css
 └── style.css
+
+.config/quickshell/
+├── shell.qml
+└── clock.qml
 ```
