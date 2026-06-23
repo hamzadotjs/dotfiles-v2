@@ -13,8 +13,8 @@
 
 This config drops the traditional waybar/panel entirely. All info you need comes from:
 - **Quickshell config, Made by me**
-- **Dyncamic theming** using matugen
-- **power menu and swaync, rofi replacement in pure QML**
+- **Dynamic theming** using matugen
+- **swaync, rofi and Hyprland configs**
 ## 📦 Requirements
 
 ```bash
