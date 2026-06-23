@@ -2,7 +2,7 @@
 
 # 🌊 Quickshell Hyprland Config
 
-> A minimal, Quikshell Hyprland rice for those who want a clean desktop without status bars cluttering their screen.
+> A minimal, Quickshell Hyprland rice for those who want a clean desktop without status bars cluttering their screen.
 
 ![Hyprland Version](https://img.shields.io/badge/Hyprland-v0.45.0-blue)
 ![Wayland](https://img.shields.io/badge/Wayland-Yes-green)
