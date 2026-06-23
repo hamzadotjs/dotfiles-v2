@@ -10,7 +10,9 @@
 ![OS](https://img.shields.io/badge/OS-Nixos-archblue)
 
 ## 🎯 Overview
-<video src="./2026-06-23_15-20-01[1].mov" width="320" height="240" controls></video>
+
+https://github.com/user-attachments/assets/5f4fe48e-f284-41a3-b3b4-85eaefb66ac9
+
 ##  Features
 This config drops the traditional waybar/panel entirely. All info you need comes from:
 - **Quickshell config, Made by me**
