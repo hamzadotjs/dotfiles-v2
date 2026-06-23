@@ -4,9 +4,10 @@
 
 > A minimal, Quickshell Hyprland rice for those who want a clean desktop without status bars cluttering their screen.
 
-![Hyprland Version](https://img.shields.io/badge/Hyprland-v0.45.0-blue)
+![Hyprland Version](https://img.shields.io/badge/Hyprland-v0.55.0-blue)
 ![Wayland](https://img.shields.io/badge/Wayland-Yes-green)
-![OS](https://img.shields.io/badge/OS-CachyOS-archblue)
+![OS](https://img.shields.io/badge/OS-Arch-archblue)
+![OS](https://img.shields.io/badge/OS-Nixos-archblue)
 
 ## 🎯 Overview
 
