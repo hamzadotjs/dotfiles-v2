@@ -3,7 +3,7 @@ import QtQuick
 
 Text {
     id: clockText
-    color: "#F5E2C5"
+    color: Theme.fg
     font {
         family: "Jetbrains Mono Nerd Font"
         pixelSize: 15

@@ -14,7 +14,7 @@ ShellRoot {
             // Anchors lock it to the top edge and stretch it full width
             anchors { top: true; left: true; right: true }
             implicitHeight: 38
-            color: "#040e0d" 
+            color: Theme.bg
  
             RowLayout {
                 anchors.fill: parent
