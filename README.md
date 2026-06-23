@@ -46,7 +46,8 @@ cp -r dotfiles-v2/* ~/.config/*
 ```
 
 ## ⚙️ Config Structure
-```.config/hypr/
+```
+.config/hypr/
 ├── colors.lua
 ├── hyprland.lua
 └── parts
