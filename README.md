@@ -11,7 +11,7 @@
 
 ## 🎯 Overview
 
-https://github.com/user-attachments/assets/5f4fe48e-f284-41a3-b3b4-85eaefb66ac9
+https://github.com/user-attachments/assets/9a2b1112-b1d6-40a0-84c4-c2798ec232b3
 
 ##  Features
 This config drops the traditional waybar/panel entirely. All info you need comes from:
