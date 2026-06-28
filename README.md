@@ -11,7 +11,7 @@
 
 ## 🎯 Overview
 
-![](./showcase.mov)
+![](./showcase.gif)
 
 ##  Features
 This config drops the traditional waybar/panel entirely. All info you need comes from:
