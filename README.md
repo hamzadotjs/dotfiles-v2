@@ -10,8 +10,7 @@
 ![OS](https://img.shields.io/badge/OS-Nixos-archblue)
 
 ## 🎯 Overview
-
-[file:./showcase.mov]
+![](showcase.mov)
 
 ##  Features
 This config drops the traditional waybar/panel entirely. All info you need comes from:
